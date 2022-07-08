@@ -59,7 +59,7 @@ button:focus {
     margin-bottom: .2rem;
     background-color: rgb(202, 202, 235);
 }
-.styles li:hover, #increase:hover, #decrease:hover, #noneFilter:hover, .options select{
+.styles li:hover, #increase:hover, #decrease:hover, #removeFilter:hover, .options select{
     background-color: rgb(184, 184, 187);
 }
 .hidden {
@@ -73,9 +73,9 @@ button:focus {
     margin-left: 2rem;
 }
 
-#noneFilter{
+#removeFilter{
     display: none;
 }
-#increase, #decrease, #noneFilter{
+#increase, #decrease, #removeFilter{
     background-color: rgb(202, 202, 235);
 }

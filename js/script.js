@@ -242,7 +242,7 @@ function desactivateFilter(){
 
 // 26/ Créer une fonction qui permet de gérer au clic sur un lien la désactivation des filtres.
 function desactivateFilterOnClick(){
-    document.getElementById("noneFilter").addEventListener("click", function(event){
+    document.getElementById("removeFilter").addEventListener("click", function(event){
         desactivateFilter();
     });
 }
