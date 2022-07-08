@@ -56,6 +56,9 @@ button:focus {
     display: none;
 }
 
+#noneFilter{
+    display: none;
+}
 #increase, #decrease, #noneFilter{
     background-color: rgb(202, 202, 235);
 }

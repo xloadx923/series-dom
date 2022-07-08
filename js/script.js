@@ -90,8 +90,10 @@ function manageClickStyles(){
             filterStyle(this.dataset.style)
             resetStyles()
             this.classList.add("underline")
+            displayFilterIfExist();
         })
     });
+    
 }
 
 // 9/ Créer une fonction pour retirer le soulignement de tous les styles.
@@ -231,7 +233,7 @@ function sortByYear(){
 // 24/ Permettez à la fonction précédente de gérer un click sur un autre lien pour trier les series par années décroissantes.
 
 // 25/ Créer une fonction qui désactive le filtre activé.
-function desactivateFilterActive(){
+function desactivateFilter(){
     document.querySelectorAll("#container > li").forEach(li =>{
         if(li.classList.contains("hidden")) li.classList.remove("hidden");
     });
@@ -240,12 +242,18 @@ function desactivateFilterActive(){
 // 26/ Créer une fonction qui permet de gérer au clic sur un lien la désactivation des filtres.
 function desactivateFilterOnClick(){
     document.getElementById("noneFilter").addEventListener("click", function(event){
-        desactivateFilterActive();
+        desactivateFilter();
     });
 }
 
 // 27/ Créer une fonction qui gère l'affichage de ce lien de désactivation des filtres uniquement quand un filtre est activé.
-
+function displayFilterIfExist(){
+    document.querySelectorAll("#styles > li").forEach(li =>{
+        if(li.classList.contains('underline')){
+            document.getElementById("noneFilter").style.display = 'block';
+        }
+    });
+}
 
 // 28/ Créer l'ensemble des fonctions permettant d'ajouter la fonctionnalité de filtrage par pays d'origine,
 //     en reprenant la logique des questions 3/ à 11/ sur le filtrage par style.
