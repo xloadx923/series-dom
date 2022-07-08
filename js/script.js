@@ -13,9 +13,10 @@ try {
 
         // Event handlers
         manageClickStyles();
-        manageSeriesClick()
-        manageFavClick()
-    }); 
+        manageSeriesClick();
+        manageFavClick();
+        getIdSeriesOrderByYear();
+    });
 } catch (error) {
     console.error("error" + error);
 }
@@ -40,7 +41,7 @@ function getStyles() {
             if(!array.includes(style)) {
                 array.push(style)
             }
-        }) 
+        })
     });
     return array;
 }
@@ -157,13 +158,13 @@ function manageSeriesClick(){
 }
 
 // 17/ Créer une fonction qui affiche le nom des séries favorites dans la page
-
 function displayFavList(){
     let html = "";
     favList.forEach(serie => {
-       html += `<li data-id="${serie.id}">${serie.name}</li>` 
+       html += `<li data-id="${serie.id}">${serie.name}</li>`
     })
     document.getElementById("favoris").innerHTML = html;
+    getNumberFavorite();
 }
 
 // 18/ Créer une fonction permettant de retirer une série de la liste des favoris de par son id.
@@ -177,16 +178,24 @@ function removeSerieFromFav(id) {
 
 function manageFavClick() {
     document.getElementById("favoris").addEventListener("click", function(event){
-        if(event.target.hasAttribute("data-id")) removeSerieFromFav(event.target.dataset.id);    
+        if(event.target.hasAttribute("data-id")) removeSerieFromFav(event.target.dataset.id);
     })
 }
 
 
 // 20/ Créer une fonction qui affiche le nombre de favoris en titre de la liste des favoris.
-
+function getNumberFavorite(){
+    let nbrFav = favList.length;
+    document.querySelector("#nbr-Fav").innerText = nbrFav;
+}
 
 // 21/ Créer une fonction qui retourne les id des séries par ordre d'année de sortie.
 
+function getIdSeriesOrderByYear(){
+    console.log(series)
+    const mapID =  series.sort((a, b) => a.launchYear - b.launchYear).map((a) => a.id);
+    return mapID;
+}
 
 // 22/ Créer une fonction qui affiche les séries dans la page dans l'ordre des ids passés en paramètre.
 
@@ -207,4 +216,4 @@ function manageFavClick() {
 
 
 // 28/ Créer l'ensemble des fonctions permettant d'ajouter la fonctionnalité de filtrage par pays d'origine,
-//     en reprenant la logique des questions 3/ à 11/ sur le filtrage par style. 
+//     en reprenant la logique des questions 3/ à 11/ sur le filtrage par style.
