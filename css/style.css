@@ -1,0 +1,73 @@
+
+/* NORMALIZER */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.container, .styles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.container li{
+    text-align: center;
+    background: rgb(148, 175, 147);
+    border: solid rgb(148, 175, 147) 1px;
+    color: rgb(215, 220, 240);
+    text-shadow: 0 1.5px 0 black;
+}
+.styles li{
+    padding: 2px 5px;
+    color: yellow;
+    background: rgb(148, 175, 147);
+    text-shadow: 0 1px 0 black;
+    font-size: 1.5rem;
+}
+.underline{
+    text-decoration: underline;
+}
+.styles{
+    text-decoration: none;
+}
+.hidden{
+    display: none;
+}

@@ -1,0 +1,430 @@
+[
+    {
+       "id":1,
+       "name":"Arcane",
+       "launchYear":2021,
+       "country":"U.S.A.",
+       "availableOn":"Netflix",
+       "styles":[
+          "Aventure",
+          "Science fiction",
+          "Action",
+          "Animation"
+       ],
+       "createdBy":[
+          "Alex Yee",
+          "Christian \"Praeco\" Linke"
+       ],
+       "actors":[
+          "Hailee Steinfeld",
+          "Ella Purnell",
+          "Kevin Alejandro"
+       ],
+       "episodeDurationInMinutes":45,
+       "numberOfSeasons":2,
+       "numberOfEpisods":18,
+       "ongoing":true,
+       "image":"https://fr.web.img5.acsta.net/c_310_420/pictures/21/11/02/11/12/2878509.jpg"
+    },
+    {
+       "id":2,
+       "name":"Game of Thrones",
+       "launchYear":2011,
+       "country":"U.S.A.",
+       "availableOn":"OCS",
+       "styles":[
+          "Drame",
+          "Fantastique"
+       ],
+       "createdBy":[
+          "D.B. Weiss",
+          "David Benioff"
+       ],
+       "actors":[
+          "Emilia Clarke",
+          "Peter Dinklage",
+          "Kit Harington",
+          "Lena Headey"
+       ],
+       "episodeDurationInMinutes":52,
+       "numberOfSeasons":8,
+       "numberOfEpisods":73,
+       "ongoing":false,
+       "image":"https://fr.web.img4.acsta.net/c_310_420/pictures/19/03/21/17/05/1927893.jpg"
+    },
+    {
+       "id":3,
+       "name":"Breaking Bad",
+       "launchYear":2008,
+       "country":"U.S.A.",
+       "availableOn":"Netflix",
+       "styles":[
+          "Drame"
+       ],
+       "createdBy":[
+          "Vince Gilligan"
+       ],
+       "actors":[
+          "Bryan Cranston",
+          "Aaron Paul",
+          "Anna Gunn",
+          "Dean Norris"
+       ],
+       "episodeDurationInMinutes":42,
+       "numberOfSeasons":5,
+       "numberOfEpisods":62,
+       "ongoing":false,
+       "image":"https://fr.web.img3.acsta.net/c_310_420/pictures/19/06/18/12/11/3956503.jpg"
+    },
+    {
+       "id":4,
+       "name":"Chernobyl",
+       "launchYear":2019,
+       "country":"U.S.A.",
+       "availableOn":"OCS",
+       "styles":[
+          "Drame"
+       ],
+       "createdBy":[
+          "Craig Mazin"
+       ],
+       "actors":[
+          "Jared Harris",
+          "Stellan Skarsgård",
+          "Paul Ritter"
+       ],
+       "episodeDurationInMinutes":58,
+       "numberOfSeasons":1,
+       "numberOfEpisods":5,
+       "ongoing":false,
+       "image":"https://fr.web.img5.acsta.net/c_310_420/pictures/21/02/11/14/15/4218723.jpg"
+    },
+    {
+       "id":5,
+       "name":"Peaky Blinders",
+       "launchYear":2013,
+       "country":"Grande-Bretagne",
+       "availableOn":"Netflix",
+       "styles":[
+          "Drame",
+          "Historique",
+          "Policier"
+       ],
+       "createdBy":[
+          "Steven Knight"
+       ],
+       "actors":[
+          "Cillian Murphy",
+          "Natasha O'Keeffe",
+          "Helen McCrory"
+       ],
+       "episodeDurationInMinutes":52,
+       "numberOfSeasons":6,
+       "numberOfEpisods":36,
+       "ongoing":false,
+       "image":"https://fr.web.img6.acsta.net/c_310_420/pictures/22/06/07/11/57/5231272.jpg"
+    },
+    {
+       "id":6,
+       "name":"Shingeki no Kyojin",
+       "launchYear":2013,
+       "country":"Japon",
+       "availableOn":"Netflix",
+       "styles":[
+          "Aventure",
+          "Action",
+          "Animation"
+       ],
+       "createdBy":[
+          "Yasuko Kobayashi"
+       ],
+       "actors":[
+          "Yûki Kaji",
+          "Yui Ishikawa",
+          "Marina Inoue"
+       ],
+       "episodeDurationInMinutes":24,
+       "numberOfSeasons":4,
+       "numberOfEpisods":95,
+       "ongoing":true,
+       "image":"https://fr.web.img4.acsta.net/c_310_420/pictures/20/12/28/10/24/5603983.jpg"
+    },
+    {
+       "id":7,
+       "name":"Sherlock",
+       "launchYear":2010,
+       "country":"Grande-Bretagne",
+       "availableOn":"Amazon",
+       "styles":[
+          "Aventure",
+          "Drame",
+          "Policier"
+       ],
+       "createdBy":[
+          "Steven Moffat",
+          "Mark Gatiss"
+       ],
+       "actors":[
+          "Benedict Cumberbatch",
+          "Martin Freeman",
+          "Amanda Abbington"
+       ],
+       "episodeDurationInMinutes":90,
+       "numberOfSeasons":4,
+       "numberOfEpisods":14,
+       "ongoing":false,
+       "image":"https://fr.web.img3.acsta.net/c_310_420/pictures/18/11/05/18/04/4981046.jpg"
+    },
+    {
+       "id":8,
+       "name":"The Queen's Gambit",
+       "launchYear":2020,
+       "country":"U.S.A.",
+       "availableOn":"Netflix",
+       "styles":[
+          "Drame"
+       ],
+       "createdBy":[
+          "Scott Frank",
+          "Allan Scott"
+       ],
+       "actors":[
+          "Anya Taylor-Joy",
+          "William Horberg",
+          "Harry Melling"
+       ],
+       "episodeDurationInMinutes":60,
+       "numberOfSeasons":1,
+       "numberOfEpisods":7,
+       "ongoing":false,
+       "image":"https://fr.web.img2.acsta.net/c_310_420/pictures/20/09/25/09/06/0492330.jpg"
+    },
+    {
+       "id":9,
+       "name":"When They See Us",
+       "launchYear":2019,
+       "country":"U.S.A.",
+       "availableOn":"Netflix",
+       "styles":[
+          "Drame"
+       ],
+       "createdBy":[
+          "Ava DuVernay"
+       ],
+       "actors":[
+          "Asante Blackk",
+          "Caleel Harris",
+          "Ethan Herisse"
+       ],
+       "episodeDurationInMinutes":35,
+       "numberOfSeasons":1,
+       "numberOfEpisods":4,
+       "ongoing":false,
+       "image":"https://fr.web.img4.acsta.net/c_310_420/pictures/19/05/06/11/16/2031077.jpg"
+    },
+    {
+       "id":10,
+       "name":"Stranger Things",
+       "launchYear":2016,
+       "country":"U.S.A.",
+       "availableOn":"Netflix",
+       "styles":[
+          "Drame",
+          "Fantastique",
+          "Thriller"
+       ],
+       "createdBy":[
+          "Matt Duffer, Ross Duffer"
+       ],
+       "actors":[
+          "Winona Ryder",
+          "Millie Bobby Brown",
+          "Finn Wolfhard"
+       ],
+       "episodeDurationInMinutes":55,
+       "numberOfSeasons":5,
+       "numberOfEpisods":43,
+       "ongoing":true,
+       "image":"https://fr.web.img2.acsta.net/c_310_420/pictures/22/05/18/14/31/5186184.jpg"
+    },
+    {
+       "id":11,
+       "name":"Hunter X Hunter",
+       "launchYear":2011,
+       "country":"Japon",
+       "availableOn":"Netflix",
+       "styles":[
+          "Aventure",
+          "Comédie",
+          "Animation"
+       ],
+       "createdBy":[
+          "Megumi Han",
+          "Keiji Fujiwara",
+          "Miyuki Sawashiro"
+       ],
+       "actors":[
+          "Megumi Han",
+          "Keiji Fujiwara",
+          "Miyuki Sawashiro",
+          "Mariya Ise"
+       ],
+       "episodeDurationInMinutes":22,
+       "numberOfSeasons":4,
+       "numberOfEpisods":148,
+       "ongoing":false,
+       "image":"https://fr.web.img3.acsta.net/c_310_420/pictures/19/08/01/09/52/4803203.jpg"
+    },
+    {
+       "id":12,
+       "name":"Heartstopper",
+       "launchYear":2022,
+       "country":"Grande-Bretagne",
+       "availableOn":"Netflix",
+       "styles":[
+          "Drame",
+          "Romance"
+       ],
+       "createdBy":[
+          "Alice Oseman"
+       ],
+       "actors":[
+          "Kit Connor",
+          "Joe Locke",
+          "Corinna Brown"
+       ],
+       "episodeDurationInMinutes":30,
+       "numberOfSeasons":3,
+       "numberOfEpisods":16,
+       "ongoing":true,
+       "image":"https://fr.web.img5.acsta.net/c_310_420/pictures/22/04/13/18/45/5502555.jpg?coixp=51&coiyp=59"
+    },
+    {
+       "id":13,
+       "name":"Vikings",
+       "launchYear":2013,
+       "country":"Canada",
+       "availableOn":"Netflix",
+       "styles":[
+          "Aventure",
+          "Drame",
+          "Historique"
+       ],
+       "createdBy":[
+          "Michael Hirst"
+       ],
+       "actors":[
+          "Alex Høgh Andersen",
+          "Gustaf Skarsgård",
+          "Marco Ilsø"
+       ],
+       "episodeDurationInMinutes":52,
+       "numberOfSeasons":6,
+       "numberOfEpisods":89,
+       "ongoing":false,
+       "image":"https://fr.web.img6.acsta.net/c_310_420/pictures/20/12/04/10/04/4859166.jpg"
+    },
+    {
+       "id":14,
+       "name":"True Detective",
+       "launchYear":2014,
+       "country":"U.S.A.",
+       "availableOn":"OCS",
+       "styles":[
+          "Drame",
+          "Policier",
+          "Thriller"
+       ],
+       "createdBy":[
+          "Nic Pizzolatto"
+       ],
+       "actors":[
+          "Mahershala Ali",
+          "Stephen Dorff",
+          "Carmen Ejogo"
+       ],
+       "episodeDurationInMinutes":55,
+       "numberOfSeasons":4,
+       "numberOfEpisods":24,
+       "ongoing":true,
+       "image":"https://fr.web.img3.acsta.net/c_310_420/pictures/21/02/11/13/42/2614007.jpg"
+    },
+    {
+       "id":15,
+       "name":"Westworld",
+       "launchYear":2016,
+       "country":"U.S.A.",
+       "availableOn":"OCS",
+       "styles":[
+          "Drame",
+          "Western",
+          "Science fiction",
+          "Thriller"
+       ],
+       "createdBy":[
+          "Jonathan Nolan",
+          "Lisa Joy"
+       ],
+       "actors":[
+          "Evan Rachel Wood",
+          "Thandiwe Newton",
+          "Jeffrey Wright"
+       ],
+       "episodeDurationInMinutes":52,
+       "numberOfSeasons":4,
+       "numberOfEpisods":36,
+       "ongoing":true,
+       "image":"https://fr.web.img6.acsta.net/c_310_420/pictures/22/06/07/11/33/0899413.jpg"
+    },
+    {
+       "id":16,
+       "name":"Shameless",
+       "launchYear":2011,
+       "country":"U.S.A.",
+       "availableOn":"Amazon",
+       "styles":[
+          "Comédie",
+          "Drame"
+       ],
+       "createdBy":[
+          "Paul Abbott"
+       ],
+       "actors":[
+          "William H. Macy",
+          "Jeremy Allen White",
+          "Shanola Hampton"
+       ],
+       "episodeDurationInMinutes":45,
+       "numberOfSeasons":11,
+       "numberOfEpisods":134,
+       "ongoing":false,
+       "image":"https://fr.web.img2.acsta.net/c_310_420/pictures/18/07/27/12/29/1469043.jpg"
+    },
+    {
+       "id":17,
+       "name":"One Piece",
+       "launchYear":1999,
+       "country":"Japon",
+       "availableOn":"ADN",
+       "styles":[
+           "Aventure",
+           "Comédie",
+           "Animation"
+       ],
+       "createdBy":[
+            "Isao Murayama",
+            "Michiru Shimada",
+            "Yoshiyuki Suga"
+       ],
+       "actors":[
+            "Mayumi Tanaka",
+            "Chikao Otsuka",
+            "Kazuya Nakai"
+       ],
+       "episodeDurationInMinutes":25,
+       "numberOfSeasons":20,
+       "numberOfEpisods":1021,
+       "ongoing":true,
+       "image":"https://fr.web.img3.acsta.net/c_310_420/pictures/19/08/09/14/53/1842996.jpg"
+    }
+ ]
