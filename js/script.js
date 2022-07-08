@@ -251,7 +251,7 @@ function desactivateFilterOnClick(){
 function displayFilterIfExist(){
     document.querySelectorAll("#styles > li").forEach(li =>{
         if(li.classList.contains('underline')){
-            document.getElementById("noneFilter").style.display = 'block';
+            document.getElementById("removeFilter").style.display = 'block';
         }
     });
 }
@@ -263,7 +263,7 @@ function listCountries(){
     noneduplicate.sort();
     return noneduplicate;
 }
-/*************** Without Duplicate ***********************/
+
 function findCountry() {
     const unique = series.map(serie => serie.country);
     return [...new Set(unique)]
@@ -271,14 +271,17 @@ function findCountry() {
 
 function displayAllCountry(countries){
     countries.forEach(country => {
-        document.getElementById("selectCountry").innerHTML += `<option value="${country}">` + country + `</option>`;
+        document.getElementById("selectCountry").innerHTML += `<option value="all">` + country + `</option>`;
     });
 }
+
 function changeCountry(){
     document.getElementById("selectCountry").addEventListener('change',function(event){
         document.querySelectorAll('#container > li').forEach(li => {
             if(li.dataset.country != this.value) li.classList.add('hidden');
             else li.classList.remove('hidden');
+
+            if(this.value === "all") resetCountry();
         });
     });
 }
@@ -288,5 +291,9 @@ function filterOriginCountry(){
     const countries = findCountry();
     displayAllCountry(countries);
     changeCountry();
-
+}
+function resetCountry(){
+    document.querySelectorAll("#container > li").forEach(li =>{
+        li.classList.remove("hidden")
+    });
 }
