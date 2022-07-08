@@ -184,6 +184,7 @@ function manageFavClick() {
 
 
 // 20/ Créer une fonction qui affiche le nombre de favoris en titre de la liste des favoris.
+
 function getNumberFavorite(){
     let nbrFav = favList.length;
     document.querySelector("#nbr-Fav").innerText = nbrFav;
@@ -192,13 +193,16 @@ function getNumberFavorite(){
 // 21/ Créer une fonction qui retourne les id des séries par ordre d'année de sortie.
 
 function getIdSeriesOrderByYear(){
-    console.log(series)
-    const mapID =  series.sort((a, b) => a.launchYear - b.launchYear).map((a) => a.id);
+    let serieID = JSON.parse(JSON.stringify(series)); // clonage de l'objet 'series'
+    const mapID =  serieID.sort((a, b) => a.launchYear - b.launchYear).map((a) => a.id);
     return mapID;
 }
 
 // 22/ Créer une fonction qui affiche les séries dans la page dans l'ordre des ids passés en paramètre.
 
+function displaySortSeriesById(array){
+
+}
 
 // 23/ Créer une fonction qui permet de gérer au clic sur un lien dans la page le tri des series par années croissantes
 
