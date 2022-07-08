@@ -16,6 +16,7 @@ try {
         manageSeriesClick();
         manageFavClick();
         getIdSeriesOrderByYear();
+        displaySortSeriesById([1,4,8,7,6,9,5,2,10,3,17,15,14,13,12,11]);
     });
 } catch (error) {
     console.error("error" + error);
@@ -200,8 +201,14 @@ function getIdSeriesOrderByYear(){
 
 // 22/ Créer une fonction qui affiche les séries dans la page dans l'ordre des ids passés en paramètre.
 
-function displaySortSeriesById(array){
+function displaySortSeriesById(order){
+    const element = document.getElementById("container");
+    element.innerHTML = '';
 
+    for(const list of order) {
+        let serieById = getDataFromId(list);
+        element.innerHTML += `<li data-id="${serieById.id}"><h2>${serieById.name}</h2><img class="image" src="${serieById.image}"> </li>`;
+    }
 }
 
 // 23/ Créer une fonction qui permet de gérer au clic sur un lien dans la page le tri des series par années croissantes
