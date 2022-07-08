@@ -46,8 +46,19 @@ button:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
-
+.container li{
+    font-size: 1rem;
+    padding: .5rem;
+    text-align: center;
+    background-color: rgb(202, 202, 235);
+}
+.container img{
+    width: 15rem;
+    border: solid gray 1px;
+}
 .underline{
     text-decoration: underline;
 }
@@ -68,6 +79,7 @@ button:focus {
 .options{
     display: flex;
     flex-direction: row;
+    margin: 1rem 0;
 }
 .options *{
     margin-left: 2rem;

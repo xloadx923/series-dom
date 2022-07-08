@@ -30,7 +30,7 @@ try {
 function displaySeries() {
     const element = document.getElementById("container");
     for(const serie of series) {
-        element.innerHTML += `<li data-id="${serie.id}"><h2>${serie.name}</h2><img class="image" src="${serie.image}"> </li>`;
+        element.innerHTML += `<li data-id="${serie.id}" data-country="${serie.country}"><h2>${serie.name}</h2><img class="image" src="${serie.image}"> </li>`;
     }
 
     // document.getElementById("container").innerHTML = series.map(serie => `<li><h2>${serie.name}</h2><img class="image" src="${serie.image}"> </li>`).join("")
@@ -212,7 +212,7 @@ function displaySortSeriesById(order){
 
     for(const list of order) {
         let serieById = getDataFromId(list);
-        element.innerHTML += `<li data-id="${serieById.id}"><h2>${serieById.name}</h2><img class="image" src="${serieById.image}"> </li>`;
+        element.innerHTML += `<li data-id="${serieById.id}"  data-country="${serieById.country}"><h2>${serieById.name}</h2><img class="image" src="${serieById.image}"> </li>`;
     }
 }
 
@@ -276,7 +276,10 @@ function displayAllCountry(countries){
 }
 function changeCountry(){
     document.getElementById("selectCountry").addEventListener('change',function(event){
-        console.log(this.value)
+        document.querySelectorAll('#container > li').forEach(li => {
+            if(li.dataset.country != this.value) li.classList.add('hidden');
+            else li.classList.remove('hidden');
+        });
     });
 }
 
