@@ -17,7 +17,7 @@ try {
         manageFavClick();
         getIdSeriesOrderByYear();
         displaySortSeriesById([1,4,8,7,6,9,5,2,10,3,17,15,14,13,12,11]);
-        sortByIncreaseYear();
+        sortByYear();
     });
 } catch (error) {
     console.error("error" + error);
@@ -213,20 +213,26 @@ function displaySortSeriesById(order){
 }
 
 // 23/ Créer une fonction qui permet de gérer au clic sur un lien dans la page le tri des series par années croissantes
-function sortByIncreaseYear(){
+function sortByYear(){
+    const element = document.getElementById("container");
     document.getElementById("increase").addEventListener("click", function(event){
-        const sortID = series.sort((a, b) => a.launchYear - b.launchYear);
+        series.sort((a, b) => a.launchYear - b.launchYear);
+        element.innerHTML = '';
+        displaySeries();
     });
-    document.getElementById("decrease").addEventListener("click", function(event){
-        const sortID = series.sort((a, b) => b.launchYear - a.launchYear);
-        console.log(sortID);
+    document.getElementById("decrease").addEventListener("click", function(_event){
+        series = series.sort((a, b) => b.launchYear - a.launchYear);
+        element.innerHTML = '';
+        displaySeries();
     });
 }
 
 // 24/ Permettez à la fonction précédente de gérer un click sur un autre lien pour trier les series par années décroissantes.
 
 // 25/ Créer une fonction qui désactive le filtre activé.
+function desactivateFilterActive(){
 
+}
 
 // 26/ Créer une fonction qui permet de gérer au clic sur un lien la désactivation des filtres.
 
