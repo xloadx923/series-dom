@@ -19,6 +19,7 @@ try {
         displaySortSeriesById([1,4,8,7,6,9,5,2,10,3,17,15,14,13,12,11]);
         sortByYear();
         desactivateFilterOnClick();
+        filterOriginCountry()
     });
 } catch (error) {
     console.error("error" + error);
@@ -257,3 +258,32 @@ function displayFilterIfExist(){
 
 // 28/ Créer l'ensemble des fonctions permettant d'ajouter la fonctionnalité de filtrage par pays d'origine,
 //     en reprenant la logique des questions 3/ à 11/ sur le filtrage par style.
+function listCountries(){
+    const noneduplicate = findDuplicates(series);
+    noneduplicate.sort();
+    return noneduplicate;
+}
+/*************** Without Duplicate ***********************/
+function findCountry() {
+    const unique = series.map(serie => serie.country);
+    return [...new Set(unique)]
+}
+
+function displayAllCountry(countries){
+    countries.forEach(country => {
+        document.getElementById("selectCountry").innerHTML += `<option value="${country}">` + country + `</option>`;
+    });
+}
+function changeCountry(){
+    document.getElementById("selectCountry").addEventListener('change',function(event){
+        console.log(this.value)
+    });
+}
+
+function filterOriginCountry(){
+    // filterByCountry()
+    const countries = findCountry();
+    displayAllCountry(countries);
+    changeCountry();
+
+}
