@@ -18,6 +18,7 @@ try {
         getIdSeriesOrderByYear();
         displaySortSeriesById([1,4,8,7,6,9,5,2,10,3,17,15,14,13,12,11]);
         sortByYear();
+        desactivateFilterActive();
     });
 } catch (error) {
     console.error("error" + error);
@@ -98,7 +99,7 @@ function manageClickStyles(){
 function resetStyles(){
     document.querySelectorAll("#styles > li").forEach(li =>{
         li.classList.remove("underline")
-    });    
+    });
 }
 
 // 10/ Créer une fonction qui affiche dans la page uniquement les séries dont les id sont en paramètre.
@@ -148,7 +149,7 @@ function addSerieToFav(serie){
    } 
    displayFavList();
 }
- 
+
 // 16/ Créer une fonction pour ajouter une série en favoris au click.
 
 function manageSeriesClick(){
@@ -231,7 +232,11 @@ function sortByYear(){
 
 // 25/ Créer une fonction qui désactive le filtre activé.
 function desactivateFilterActive(){
-
+   document.getElementById("noneFilter").addEventListener("click", function(event){
+        document.querySelectorAll("#container > li").forEach(li =>{
+            if(li.classList.contains("hidden")) li.classList.remove("hidden");
+        });
+   });
 }
 
 // 26/ Créer une fonction qui permet de gérer au clic sur un lien la désactivation des filtres.
