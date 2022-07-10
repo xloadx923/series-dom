@@ -242,6 +242,7 @@ function desactivateFilter(){
     document.querySelectorAll("#container > li").forEach(li =>{
         if(li.classList.contains("hidden")) li.classList.remove("hidden");
     });
+    document.getElementById('removeFilter').style.display = "none";
 }
 
 // 26/ Créer une fonction qui permet de gérer au clic sur un lien la désactivation des filtres.
