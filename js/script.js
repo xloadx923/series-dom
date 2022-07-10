@@ -268,7 +268,8 @@ function listCountries(){
 
 function findCountry() {
     const unique = series.map(serie => serie.country);
-    return [...new Set(unique)]
+    return unique.filter((value,index,self) => self.indexOf(value) === index );
+    // ou return [...new Set(unique)];
 }
 
 function displayAllCountry(countries){
