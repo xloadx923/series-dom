@@ -111,7 +111,7 @@ function displaySeriesById(array){
         if (array.includes(parseInt(li.dataset.id))) li.classList.remove("hidden")
         else li.classList.add("hidden")
     });
-} 
+}
 
 // 11/ Modifier la fonction de la question 8/ afin de filtrer les séries au clic sur un style.
 
@@ -271,7 +271,7 @@ function findCountry() {
 
 function displayAllCountry(countries){
     countries.forEach(country => {
-        document.getElementById("selectCountry").innerHTML += `<option value="all">` + country + `</option>`;
+        document.getElementById("selectCountry").innerHTML += `<option value="`+ country +`">` + country + `</option>`;
     });
 }
 
@@ -280,7 +280,6 @@ function changeCountry(){
         document.querySelectorAll('#container > li').forEach(li => {
             if(li.dataset.country != this.value) li.classList.add('hidden');
             else li.classList.remove('hidden');
-
             if(this.value === "all") resetCountry();
         });
     });
