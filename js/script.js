@@ -19,7 +19,7 @@ try {
         displaySortSeriesById([1,4,8,7,6,9,5,2,10,3,17,15,14,13,12,11]);
         sortByYear();
         desactivateFilterOnClick();
-        filterOriginCountry()
+        filterOriginCountry();
     });
 } catch (error) {
     console.error("error" + error);
@@ -158,6 +158,7 @@ function addSerieToFav(serie){
 function manageSeriesClick(){
     document.querySelectorAll("#container > li").forEach(li =>{
         li.addEventListener("click",function (event) {
+            console.log('test favorite');
             addSerieToFav(getDataFromId(this.dataset.id))
         })
     })
@@ -210,9 +211,10 @@ function displaySortSeriesById(order){
     const element = document.getElementById("container");
     element.innerHTML = '';
 
-    for(const list of order) {
-        let serieById = getDataFromId(list);
-        element.innerHTML += `<li data-id="${serieById.id}"  data-country="${serieById.country}"><h2>${serieById.name}</h2><img class="image" src="${serieById.image}"> </li>`;
+    for(const listOrder of order) {
+        let serieById = getDataFromId(listOrder);
+        if(serieById.id == listOrder) element.innerHTML += `<li data-id="${serieById.id}"  data-country="${serieById.country}"><h2>${serieById.name}</h2><img class="image" src="${serieById.image}"> </li>`;
+        manageSeriesClick();
     }
 }
 
