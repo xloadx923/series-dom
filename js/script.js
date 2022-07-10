@@ -116,7 +116,7 @@ function displaySeriesById(array){
 // 11/ Modifier la fonction de la question 8/ afin de filtrer les séries au clic sur un style.
 
 function filterStyle(style) {
-    displaySeriesById(getIdFromStyle(style))
+    displaySeriesById(getIdFromStyle(style));
 }
 
 // 12/ Créer une fonction qui retourne toutes les données d'une série à partir de son ID
@@ -158,7 +158,6 @@ function addSerieToFav(serie){
 function manageSeriesClick(){
     document.querySelectorAll("#container > li").forEach(li =>{
         li.addEventListener("click",function (event) {
-            console.log('test favorite');
             addSerieToFav(getDataFromId(this.dataset.id))
         })
     })
@@ -237,6 +236,9 @@ function sortByYear(){
 
 // 25/ Créer une fonction qui désactive le filtre activé.
 function desactivateFilter(){
+    document.querySelectorAll('#styles > li').forEach(li => {
+        if(li.classList.contains('underline')) li.classList.remove('underline')
+    });
     document.querySelectorAll("#container > li").forEach(li =>{
         if(li.classList.contains("hidden")) li.classList.remove("hidden");
     });
